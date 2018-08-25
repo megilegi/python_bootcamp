@@ -11,9 +11,9 @@ stan = {
     "jabłka": 8,
     "gruszki": 8,
     "pomarańcze": 8,
-    "ser": 8
+    "ser": 8,
+    "koty": 15
 }
-
 
 try:
     while True:
@@ -34,9 +34,7 @@ try:
         else:
             print('Nie ma takiego produktu')
             continue
-   # print(stan)
-
-
+# print(stan)
 
 except Exception as e:
     print(f'Błąd: {e}')
