@@ -9,6 +9,7 @@
 #else: 
 #	print('Mniejsza równa 15: False')
 
+
 #if liczba % 2 == 0:
 #	print('Podzielna przez 2: True')
 #else: 
