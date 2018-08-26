@@ -1,11 +1,9 @@
 
 def silnia(liczba):
-    i = 1
-    silnia = 1
-    while i <= liczba:
-        silnia = silnia * i
-        i += 1
-    return silnia
+    if liczba > 1:
+        return liczba * silnia(liczba - 1)
+    else:
+        return 1
 
 
 def test_silnia():
