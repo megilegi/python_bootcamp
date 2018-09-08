@@ -15,3 +15,4 @@ print(splaszcz(lista))
 
 # def test_splaszcz():
 #     assert splaszcz([1, 2, 3, [4, 5, [6]], 7]) == ([1, 2, 3, 4, 5, 6, 7])
+jupyter
