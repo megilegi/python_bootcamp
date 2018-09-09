@@ -48,7 +48,7 @@ def test_add_product(capsys):
     basket = Basket()
     product = Product(1, "Woda", 10.00)
     basket.add_product(product, 5)
-    # product = Product(1, "Mydlo", 1.00)
+    # product = Product(1, "Mydlo", 1.00)git check out
     # product = Product(1, "Mydlo", 1.00)
     # basket.add_product(product, 5)
     # assert basket.count_total_price() == 55.0
