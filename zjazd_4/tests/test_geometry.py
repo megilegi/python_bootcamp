@@ -1,4 +1,4 @@
-from mathematica.geometry.figures import square_area, triangle_area
+from zjazd_4.mathematica.geometry import square_area, triangle_area
 
 
 def test_square_area():

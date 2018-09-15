@@ -26,3 +26,13 @@ def sub_matrices(a, b):
     except IndexError:
         e = "IndexError"
         return e
+
+
+def add_matrices_zip(a, b):
+    result = []
+    for row_a, row_b in zip(a, b):
+        row = []
+        for el_a, el_b in zip(row_a, row_b):
+            row.append(el_a + el_b)
+        result.append(row)
+    return result
