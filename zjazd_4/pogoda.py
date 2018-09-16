@@ -1,9 +1,9 @@
 import urllib.request
 import json
+import tkinter
 
+def wczytaj_miasto(location):
 
-def wczytaj_miasto():
-    location = input("Pogoda w: ")
     with urllib.request.urlopen(f"https://www.metaweather.com/api/location/search/?query={location}") as location_query:
         content = location_query.read()
         data = json.loads(content)
@@ -25,9 +25,20 @@ f"- ciśnienie: {weather_data['consolidated_weather'][0]['air_pressure']} hPa\n"
 f"- wilgotność: {weather_data['consolidated_weather'][0]['humidity']}%"
     )
 
-try:
-    id = wczytaj_miasto()
-    weather_data = pobierz_dane_pogodowe(id)
-    wypisz_dane(weather_data)
-except Exception as e:
-    print(f"Błąd: {e}")
+
+if __name__ == "__main__":
+    try:
+        location = input("Pogoda w: ")
+        id = wczytaj_miasto(location)
+        weather_data = pobierz_dane_pogodowe(id)
+        wypisz_dane(weather_data)
+    except Exception as e:
+        print(f"Błąd: {e}")
+
+# if __name__ == "__main__":
+#    id_ = wczytaj_miasto()
+#    weather_data = pobierz_dane_pogodowe(id)
+#    wypisz_dane(weather_data)
+
+
+
