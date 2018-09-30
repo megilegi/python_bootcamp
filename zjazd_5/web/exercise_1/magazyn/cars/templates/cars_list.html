@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista samochodów</title>
+</head>
+<body>
+
+<h3>Lista samochodów w magazynie:</h3>
+
+
+<ul>
+{%for car in cars%}
+
+    <li><a href="/cars/{{car.id}}">{{car.marka}} | {{car.rok_produkcji}}| {{car.model_auta}} | {{car.typ_nadwozia}} | {{car.engine}}</a></li>
+
+
+{% endfor %}
+
+<!--{% load static %}-->
+<!--<img src="{% static 'static/car.jpg' %}" alt="Fotka auta!">-->
+
+
+
+</ul>
+
+
+
+
+</body>
+</html>
